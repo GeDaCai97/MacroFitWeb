@@ -1,0 +1,63 @@
+.footer {
+    @include tablet {
+        display: flex;
+    }
+    h3 {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 2rem 2rem 0 2rem;
+    }
+}
+
+.Contenedor-footer {
+    width: 60%;
+    .Fuentes-footer {
+        a{
+            text-decoration: none;
+            color: $grisOscuro;
+        }
+        ul {
+            list-style: none;
+            text-decoration: none;
+            margin: 0;
+            @include tablet {
+                display: flex;
+                padding-bottom: 2rem;
+            }
+            
+            
+            li {
+                @include tablet {
+                    margin-right: 1rem;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.Contenedor-footer2 {
+    display: block;
+
+    @include tablet {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-final {
+        p {
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: center;
+
+            @include tablet {
+                font-size: 2rem;
+            } 
+        }
+    }
+}

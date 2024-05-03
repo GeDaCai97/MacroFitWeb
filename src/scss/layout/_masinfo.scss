@@ -1,0 +1,55 @@
+.webp .seccion-dieta {
+    background-image: url(../img/fondo-dieta.webp);
+}
+.no-webp .seccion-dieta {
+    background-image: url(../img/fondo-dieta.jpg);
+}
+.seccion-dieta {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+        margin: 0;
+        padding: 2.5rem;
+        font-weight: bold;
+    }
+    h2, .dieta {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .dieta {
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        padding-bottom: 1rem;
+    }
+    .resultados {
+        padding: 2rem 0 4rem 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        @include tablet {
+            &:first-child {
+                margin-top: 5rem;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .re-error {
+        grid-column: 2 / 3;
+        .result {
+            margin: 0 2rem;
+        }
+
+    }
+}
+/* Seccion Otrainfo*/
+
+.seccion-alimentos {
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

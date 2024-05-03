@@ -1,0 +1,92 @@
+main{
+    border: 1px solid transparent;
+    background-color: #1e293b;
+    color: #d4d4d4;
+    padding: 3rem 0;
+    p{
+        color: $blanco;
+
+    }
+}
+.section-principal {
+    .parrafos-titulo {
+        text-align: left;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 2rem 5rem;
+    }
+}
+.contenedor-articulos {
+    padding: 2rem;
+    .articulos {
+        background-color: #0f131b;
+        margin: 3rem;
+        padding: 3rem 4rem;
+        border-radius: 1rem;
+        p{
+            color: $blanco;
+
+        }
+    }
+}
+.mas-informacion {
+    .boton-amarillo, .boton-verde {
+        display: block;
+        @include tablet {
+            display: inline;
+            margin-right: 3rem;
+        }
+    }
+}
+
+.seccion-resultados {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.resultados{
+    padding: 0 8rem;
+    background-color: $colormain;
+    margin: 5rem;
+    border-radius: 1rem;
+    text-align: center;
+    height: fit-content;
+    max-width: 50rem;
+    h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    .result {
+        p {
+            color: $blanco;
+
+        }
+    }
+}
+
+.form-div {
+    h3 {
+        margin-top: 0;
+    }
+    .form-info {
+        padding: 0 4rem;
+        text-align: justify;
+    }
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .form-info {
+            padding: 0 7rem 0 3rem;
+            
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    
+}
+

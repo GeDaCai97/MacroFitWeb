@@ -1,0 +1,105 @@
+.header{
+    background-color: #00719a;
+    color: $blanco;
+    p {
+        color: $blanco;
+    }
+}
+.no-webp .inicio {
+    background-image: url(../img/Banner_header.png);
+    
+}
+.webp .inicio {
+    background-image: url(../img/Banner_header.webp);
+}
+.inicio  {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Contenedor-menu {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+        }
+
+    .Logo {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include tablet {
+            margin-left: 3rem;
+        }
+        a {
+            text-decoration: none;
+            color: $blanco;
+        }
+        .logo-image {
+            max-width: 4rem;
+            margin-right: .5rem;
+        }
+    }
+    .enlaces_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            @include tablet {
+                flex-direction: row;
+            }
+            li {
+                margin: 1rem 0;
+
+                @include tablet {
+                    margin-right: 3rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+}
+.contenedor-header {
+    background-color: rgba(0, 0, 0, 0.4);
+    .contenido-header {
+        h1 {
+            font-weight: bold;
+            
+        }
+        padding: 3rem;
+        p {
+            margin: 3rem 6rem;
+            text-align: center;
+        }
+        .botones-header {
+            padding: 2rem;
+
+            a {
+                text-decoration: none;
+                color: $blanco;
+                background-color: rgb(107, 0, 116);
+                padding: 1rem;
+
+                &:hover {
+                    background-color: rgb(56, 0, 61);
+                }
+                &:first-child {
+                    margin: 0 3rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+
+.titulo-info {
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 2rem;
+    border-bottom: 1px solid $blanco;
+}
+
+/*MacroNutrientes Seccion*/
+.no-webp .contenedor-macronutri {
+    background-image: url(../img/macronutrientes-fond.jpg);
+}
+.webp .contenedor-macronutri {
+    background-image: url(../img/macronutrientes-fond.webp);
+}
+.contenedor-macronutri, .concepto, .rutinas-back {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.macronutri-contenido {
+    background: rgb(15,19,27);
+    background: linear-gradient(90deg, rgba(15,19,27,1) 0%, rgba(28,34,49,1) 98%, rgba(15,19,27,0) 100%); 
+    max-width: 85rem;
+    .macronutri-concepto {
+        padding: 4rem;
+    }
+
+}
+
+
+
+
+
+
+
+/*Rutinas seccion*/
+.no-webp .rutinas-back {
+    background-image: url(../img/rutinas-fond.jpg);   
+}
+.webp .rutinas-back {
+    background-image: url(../img/rutinas-fond.webp);   
+}
+
+.rutinas-back {
+    margin: 5rem 0;
+    .rutinas {
+        background-color: rgba(0, 0, 0, 0.5);  
+        padding: 3rem 6rem; 
+        h2, p {
+            max-width: 120rem;
+            margin: 0 auto;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        .rutinas-view {
+            max-width: 20rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 3rem .5rem;
+            margin: 2rem;
+            border-radius: 1rem;
+            p {
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            
+        }
+        .rutinas-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            @include tablet {
+                flex-direction: row;
+            }
+        }
+    }
+}
+.research-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    padding: 3rem 5rem;
+    margin: 3rem 0;
+}
+
+//Fondos Conceptos
+.no-webp .c-agua {
+    background-image: url(../img/agua-fond.jpg);   
+}
+.webp .c-agua {
+    background-image: url(../img/agua-fond.webp);   
+}
+.no-webp .c-fibra {
+    background-image: url(../img/fibra-fond.jpg);   
+}
+.webp .c-fibra {
+    background-image: url(../img/fibra-fond.webp);   
+}
+.no-webp .c-antioxidantes {
+    background-image: url(../img/antioxidantes-fond.jpg);   
+}
+.webp .c-antioxidantes {
+    background-image: url(../img/antioxidantes-fond.webp);   
+}
+.no-webp .c-alimentos {
+    background-image: url(../img/alimentos-fond.jpg);   
+}
+.webp .c-alimentos {
+    background-image: url(../img/alimentos-fond.webp);   
+}
+
+/*Seccion Conceptos*/
+.seccion-conceptos {
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.concepto {
+    padding: 4rem 5rem;
+}
+
+.contenedor-conceptos {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+/* Tipos de dietas */
+.tipos-dietas {
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+.dietas-contenedor {
+    margin: 3rem;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
